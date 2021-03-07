@@ -1,2 +1,20 @@
 # Welcome!
-Welcome to my blog where I post stuff no one cares about. Why? I dunno.
+Welcome to my blog where I post things and rant about stuff no one cares about. Why? I dunno.
+
+# 2021-03-07 - Choosing a game engine
+For many years, I wanted to create a truly cross-platform tower defense game. Initially, nothing more came out of it, but in recent time, I've gotten much better at game development and programming in general, to the point where I feel like I could actually make it a reality. I also have this semi-tradition to release a new christmas-themed game every other year, so I thought I would combine them, and make a base for a tower defense game, and make it christmas themed to try out.
+
+## MonoGame
+At first, to try and make it as cross-platform as possible, I turned to MonoGame. I don't personally like using C# for game development, due to its slow executation speed and large runtime (~100 mb!), but I decided to try it out anyway with making a simple map editor. Firstly, the resource management is not that good. Having a separate application for it that is often very buggy, gave me an initial bad experience, but it was tolerable. Next, I wanted to draw some lines to create a grid, but that ended up being way more difficult than I would've imagined. At this point I was really sceptical with continuing to use MonoGame, but continued on anyway and got some lines to draw. 
+
+Next, I wanted to try and add some background music and that's when I decided to stop using MonoGame. See, playing background music isn't that annoying, although, the resource management tool has to re-encode all music every time you build the resources, instead of all platforms using a common format, but the looping functionality is awful. See, when the track ends and start a new loop, there's like half a second or so with no sound before it loops. This was annoying enough that I wouldn't accept it. I tried setting up events and such to try and help it, but nothing worked, so that's when I decided to scrap MonoGame and move to something else.
+
+## Godot
+I was starting to run out of time, and had limitied time to build the game before the holidays. I had never used a full game engine before, with the exception of Game Maker when I made my first game back in 2015, but after that I always built my own engine on top of low-level libraries. I decided to give Godot a chance again, after trying it out some time back, but ended up ignoring it because I didn't like the scripting language. It had recently started to get more mature support for C#, so I decided to give it another shot at this, which is what the final game for the holidays ended up using.
+
+Don't get me wrong, Godot is an excellent engine, and I would honestly highly recommend it for anyone wanting a game engine, but it's not really for me. Using a full engine wasn't as fun, as the fun part of making a game for me, making the underlying game engine, was already done for me. It just wasn't as fun. I made the game anyway and published it, and the result was meh, but also very unfinished as I only got a couple of weeks on it. Godot also isn't as portable as I would've liked it to be, so I had plans to switch to something else.
+
+## Game frameworks
+I started looking into game frameworks, or low-level libraries. I initially looked for something nice in Rust, as it's a nice language, and high speed and a fairly small runtime, making it much better for game development. I was mostly looking into the Bevy engine, and as it has a web exporter, it should be about as portable as I would've wanted. The problem is that Rust isn't that portable and when trying to run it natively, it might have issues.
+
+So I turned back to C++. I had gotten quite good knowledge about C++ from working on my Spotify client, and as the only language more portable than C++ being C, I thought it was a perfect fit. I thought a lot about what libraries and frameworks to use, but recently decided on SDL, as it's very portable and seems to be popular in the homebrewing scene, so it might even run on console. I hope I'll stick with it, because it seems nice and mature, as well as being about as low-level as I would want it. I haven't tried it much yet, so I'm not sure if I'll stick with it, but it seems to be a perfect fit.
