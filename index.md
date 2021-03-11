@@ -1,6 +1,9 @@
 # Welcome!
 Welcome to my blog where I post things and rant about stuff no one cares about. Why? I dunno.
 
+# 2021-03-11 - spotify-qt v3.5
+Yes, I'm going to post news about new versions of software I release, and my thoughts about them. As for this, I originally wanted to include a lot more in the update, but due to lack of time with me moving to a new aprtment among other things, I just never got time to implement everything I wanted. I could've just delayed it a bit more, but I also wanted to get it out, so here it is! New biggest thing is a much more stable device selection and automatic resizing of columns in the track list, like the official client. I'm also thinking of making updates less frequent than once per month, but we'll see. Next update might come out in 1.5-2 months instead.
+
 # 2021-03-07 - Choosing a game engine
 For many years, I wanted to create a truly cross-platform tower defense game. Initially, nothing more came out of it, but in recent time, I've gotten much better at game development and programming in general, to the point where I feel like I could actually make it a reality. I also have this semi-tradition to release a new christmas-themed game every other year, so I thought I would combine them, and make a base for a tower defense game, and make it christmas themed to try out.
 
